@@ -1,0 +1,7 @@
+# Enter the r/memes page with human headers and saved cookies
+# Scroll to the bottom and collect all the srcs that are not reward icons
+# (Do step 2 only on the first run and track only the highest page afterwards)
+# Download every src and write it down to a text file
+# Maybe do some ocr along with translation
+# Upload all the stuuf into the vk group
+# Keep track of the first page and do the same with all new images

@@ -1,0 +1,54 @@
+<!--
+Tasks:
+1) Add a horizontal transition to the next section
+ /!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pptWizard</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<section id="one">
+		<header>
+			<a href="">pptWizard</a>
+		</header>
+		<form id="search-bar" method="post" onsubmit="moveOn();return false">
+				<img id="search-icon" src="pics/icons/search icon.png">
+				<input id="topic" type="text" required='True' placeholder="What's the topic of your presentation?">
+				<button class="search-button" type="submit" form="search-bar">
+					<div id="arrow-box">
+						<span class="arrow"></span>
+						<span class="arrow"></span>
+						<span class="arrow"></span>
+					</div>
+					<script>
+						function moveOn() {
+							// Arrows starting animation on submit
+							const btn = document.getElementsByClassName('search-button')[0];
+							btn.classList.add("starting")
+							// Move the old elements out and new in
+						}
+    				// Arrows blinking animation on hover
+						const btnElements = document.getElementsByClassName('search-button');
+						for (let i = 0; i <= btnElements.length; i++) {
+							btnElements[i].addEventListener('mouseover', function() {
+								btnElements[i].classList.add('hovered')
+							});
+							btnElements[i].addEventListener('mouseout', function() {
+								btnElements[i].classList.remove('hovered')
+							});
+						}
+					</script>
+				</button>
+		</form>
+	</section>
+	<section id="two">
+		Two
+	</section>
+	<section id="three">
+		Three
+	</section>
+</body>
+</html>

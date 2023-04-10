@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pipiton</title>
+	<link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="static\index.css">
+</head>
+
+<body>
+
+<video id="video-bg" width="100%" height="100%" preload="auto" loop autoplay muted playsinline>
+<source src="static\pipiton_background.mp4" type="video/mp4">
+</video>
+
+	<nav>
+		<div id=links>
+			<a id='fade1' class='link toFade' href=# style="text-decoration: underline;">home</a>
+			<a id='fade2' class='link toFade' href=#>about</a>
+			<a id='fade3' class='link toFade' href=#>blog</a>
+			<a id='fade4' class='link toFade' href='mailto: vyacheslav.polyakov@email.com?subject=Dear Site Creator,'>contact</a>
+		</div>
+		<div id='langs'> 
+			<a id='fade5' class='link toFade' href=#>русский</a>
+			<a id='fade6' class='link toFade' href=#>中文</a>
+		</div>
+	</nav>
+
+	<main id='main'>
+		<img class='toFade' id='logo' src="static\type.png">
+		<form class='' id='search-bar' action='/download' method="POST" onsubmit='shift();' autocomplete='off'>
+				<input class='toFade' id="topic" name="topic" type="text" required>
+				<button class='toFade' id="search-button" type="submit" form="search-bar">
+					<img id='fade7' class='link toFade' src="static\search icon.png">
+				</button>
+		</form>
+		<p id='fade8' class='toFade'>Give <strong>any</strong> topic, download a presentation.</p>
+	</main>
+	
+
+<script src='static\animations.js'></script>
+</body>
+</html>

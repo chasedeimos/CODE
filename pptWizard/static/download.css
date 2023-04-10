@@ -1,0 +1,115 @@
+body {
+	background-color: black;
+	text-align: center;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.video-bg {
+	position: fixed;
+	object-fit: fill;
+	height: 110%; 
+	opacity: 0.2;
+    filter: blur(1px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#pptArea {
+	position: relative;
+	bottom: 20px;
+}
+
+#placeholder {
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 701px;
+	height: 30px;
+	position: relative;
+	top: 55px;
+}
+
+#placeholder p {
+	font-size: 20px;
+	position: relative;
+	top: -1px;
+	letter-spacing: 1px;
+	color: black;
+}
+
+iframe {
+	position: relative;
+	width: 700px;
+	height: 400px;
+	top: 55px;
+}
+
+
+#download-button {
+	position: relative;
+	width: 20vmax;
+	height: 5vmax;
+	font-size: 25px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border-radius: 40px;
+	border-color: white;
+	background-color: transparent;
+	outline: none;
+	top: 5px;
+	z-index: 1;
+}
+
+#download-button:hover {
+	animation-name: fill;
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+}
+
+#download-button:not(:hover) {
+	animation-name: back;
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+}
+
+#download-button:active {
+	transform: scale(0.95);
+}
+
+@keyframes fill {
+	0% {
+		background-color: transparent;
+		color: white;
+	}
+	100% {
+		background-color: white;
+		color: black;
+		
+	}
+}
+
+@keyframes back {
+	0% {
+		background-color: white;
+		color: black;
+	}
+	100% {
+		background-color: transparent;
+		color: white;
+	}
+}
+
+main p {
+	position: relative;
+	top: 10px;
+    color: white;
+    font-size: 25px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
